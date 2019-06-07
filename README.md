@@ -47,7 +47,7 @@ Mobile first means designing for the minimum screen size (almost certainly a pho
 
 It changes the default font size in browsers from 16px to 10px for easier math.
 
-4. How would you describe preprocessing to someone new to CSS?
+### 4. How would you describe preprocessing to someone new to CSS?
 
 With vanilla CSS, you have the power to define the ENTIRE look for your website. Your HTML is the content, and your CSS is how that content looks -- are buttons blue or green? How large is the text? Where do you want people to see your navigation menu -- on the top or to the side? That kind of stuff. CSS is very powerful, but there's a catch if you're just using vanilla CSS: you have to define a lot of these things individually, by hand, and once you've done so, it can be hard to navigate the GIANT file you've made if you need to make changes. It's not wrong to say it's like looking for a needle in a haystack sometimes! This is where something called a "preprocessor" comes in.
 
@@ -57,7 +57,7 @@ A preprocessor also allows you to separate your stylesheets so that you don't ha
 
 Preprocessors can also let you store values in variables and mixins (which are like variables that hold more than one value). Storing values in a variable means you can store things like different color schemes or layouts in one place. Imagine you have a website and you want to change one font color that appears all throughout your website from pink to green. With vanilla CSS, you might have to change all those instances by hand, but if you make all those instances reference the "font color" variable, you can just change the variable and all those instances will change, too. 
 
-5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+### 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
 I actually feel pretty solid with preprocessors, so nothing is really giving me trouble.
 
