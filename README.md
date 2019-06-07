@@ -32,15 +32,36 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
-1. What is the difference between an adaptive website and a fully responsive website?
+### 1. What is the difference between an adaptive website and a fully responsive website?
 
-2. Describe what it means to be mobile first vs desktop first.
 
-3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+An adaptive design includes breakpoints designed for specific device sizes. At those breakpoints, a different fixed layout is applied, but the design itself isn't normally responsive the the screen space changing. (I.e. if you make the browser larger or smaller, the elements do not readjust themselves to that -- you just transition between different fixed layouts at breakpoints.)
+
+Responsive design is, as the name suggests, _responsive_ to the change in screen space. When screen space changes, the elements rearrange or resize themselves based on the screen real estate. Responsive design creates a single design for all screens and adjusts that design to fit different screen sizes at different breakpoints. It will respond if you drag your browser larger or smaller.
+
+### 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first means designing for the minimum screen size (almost certainly a phone or some kind of smart device) and growing your design from smallest to largest. Desktop first means starting at what you think your site would look like at maximum width (what you'd see on a desktop monitor) and sizing your design down from there. There are advantages and disadvantages to both, and it will affect how you write your code.
+
+### 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+
+It changes the default font size in browsers from 16px to 10px for easier math.
 
 4. How would you describe preprocessing to someone new to CSS?
 
+With vanilla CSS, you have the power to define the ENTIRE look for your website. Your HTML is the content, and your CSS is how that content looks -- are buttons blue or green? How large is the text? Where do you want people to see your navigation menu -- on the top or to the side? That kind of stuff. CSS is very powerful, but there's a catch if you're just using vanilla CSS: you have to define a lot of these things individually, by hand, and once you've done so, it can be hard to navigate the GIANT file you've made if you need to make changes. It's not wrong to say it's like looking for a needle in a haystack sometimes! This is where something called a "preprocessor" comes in.
+
+A preprocessor makes it easier to write your CSS by doing some of the work for you. It lets you nest your CSS a lot like you nest your HTML, so it's easier to see what CSS applies to what HTML element. It's also just easier to navigate because all CSS is grouped by the element it applies to.
+
+A preprocessor also allows you to separate your stylesheets so that you don't have to work in one long file. Imagine trying to find your way around a book that had no chapters -- you'd have to memorize the page numbers and make lots of notes so you knew where things were. Using separate stylesheets is like putting chapters in that book -- if you want to get to the "About Me" section, you don't need to memorize where it is, you can just open the "About Me" sheet (the "chapter").
+
+Preprocessors can also let you store values in variables and mixins (which are like variables that hold more than one value). Storing values in a variable means you can store things like different color schemes or layouts in one place. Imagine you have a website and you want to change one font color that appears all throughout your website from pink to green. With vanilla CSS, you might have to change all those instances by hand, but if you make all those instances reference the "font color" variable, you can just change the variable and all those instances will change, too. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I actually feel pretty solid with preprocessors, so nothing is really giving me trouble.
+
+I ADORE the fact that I can use variables and mixins now. I knew there had to be something like this, and I'm happy that I can use such a flexible tool to more efficiently make and design website. What _can't_ you do with variables and mixins?
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -60,7 +81,7 @@ Follow these steps to set up your project:
 Follow these steps for completing your project.
 
 - [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
-- [ ] Add your project manager as a reviewer on the pull-request
+- [x] Add your project manager as a reviewer on the pull-request
 - [ ] Your project manager will count the project as complete by merging the branch back into master.
  
 
