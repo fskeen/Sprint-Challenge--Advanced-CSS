@@ -1,1 +1,57 @@
 // Navigation code here
+
+nav {
+    width: 100%;
+    padding: 1.3rem;
+    background-color: @nav-bg;
+
+    .nav-container {
+       .flex(column, space-between, center);
+       max-width: 800px;
+       margin: auto;
+    }
+
+    h2 {
+        // font-size: 4rem;
+        padding: 10rem;
+    }
+
+    .nav-items-container {
+        .flex(row, space-between, center);
+        padding: 2rem 0 0 0;
+        
+    }
+
+    a {
+        margin: -.1rem 1.6rem;
+        color: @nav-font;
+        // font-size:  1.6rem;
+        font-weight: 600;
+    }
+
+
+    // @media @phone {
+    //     padding: 0;
+    //     margin: 0;
+
+    //     .nav-container {
+    //         .flex(column, flex-start, center);
+    //         padding-left: 2rem;
+    //     }
+
+    //     h2 {
+    //         font-size: 3.2rem;
+    //         padding-top: 1.5rem;
+    //     }
+
+    //     .nav-items-container {
+    //         .flex(row, space-between, space-between);
+    //     }
+    //     a {
+    //         margin: 0 3rem;
+    //         padding-top: .5rem;
+    //         padding-bottom: .5rem;
+    //     }
+        
+    // }
+}

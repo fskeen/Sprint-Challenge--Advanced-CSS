@@ -1,1 +1,31 @@
 // Mixins Here
+
+.flex (@flow, @justify, @align) {
+    display: flex;
+    flex-flow: @flow;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.button (@bg-color, @font-color, @width) {
+    border-radius: .5rem;
+    background-color: @bg-color;
+    color: @font-color;
+    width: @width;
+    padding: .9rem 1rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.8rem;
+
+}
+
+.button-hover (@bg-color, @font-color, @border, @shadow) {
+    background-color: @bg-color;
+    color: @font-color;
+    transition: background-color .3s ease,
+                color .3s ease;
+    border: @border 1px solid;
+    box-shadow: 5px 5px 5px @shadow;
+    cursor: pointer;
+
+}
